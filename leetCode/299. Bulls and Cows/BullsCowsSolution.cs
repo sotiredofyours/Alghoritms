@@ -21,8 +21,6 @@ public class BullsCowsSolution
             }
            
         }
-
-        
         for (int i = 0; i < guess.Length; i++)
         {
             if (dictSecret.ContainsKey(guess[i]))

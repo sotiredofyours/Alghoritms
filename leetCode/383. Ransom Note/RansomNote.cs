@@ -9,13 +9,11 @@ public class RansomNote
         {
             symbols[x - '0']++;
         }
-
         foreach (var y in ransomNote)
         {
             if (symbols[y - '0'] == 0) return false;
             symbols[y - '0']--;
         }
-
         return true;
     }
 }
