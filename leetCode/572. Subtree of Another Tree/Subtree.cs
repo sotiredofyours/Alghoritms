@@ -28,7 +28,7 @@ public class Subtree
       {
           if (n1 == null && n2 == null)
               return true;
-          else if (n1 == null && n2 != null || n1 != null && n2 == null)
+          else if (n1 == null || n2 == null)
               return false;
         
           return n1.val == n2.val && IsSameTree(n1.left, n2.left) && IsSameTree(n1.right, n2.right);
